@@ -57,7 +57,7 @@
                  *client = socket.socket(socket.SOCK_STREAM, socket.AF_INET)* 
 <br />
 
-- ***Connect** - To Connect with the server provide same address & port number at which server is listening.*<br />
+- ***Connect** - To Connect with the server provide same address & port number at which server is listening.*
 *client.connect(('127.0.0.1',1234))*<br />
 <br />
 <br />
