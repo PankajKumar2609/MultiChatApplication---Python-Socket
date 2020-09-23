@@ -56,16 +56,16 @@
 <br />
 
 #### *Send/Receive Data*
-- *send() is used to forward data from client/ server to server/client.*<br />
+- ***send()** is used to forward data from client/ server to server/client.*<br />
 *client.send(data)/ server.send(data)*<br />
 *Sockets transmit streams of bytes, so don't forget to encode your data into byte.*
-- *recv() is used to receive data from client/ server.*<br />
+- ***recv()** is used to receive data from client/ server.*<br />
 *client.recv(24)/ server.recv(24)*<br />
 *Here, 24 is size which means at a time it can only read atmost 24 bytes.*
 <br />
 <br />
 
-#### Protocols
+#### *Protocols*
 - **TCP** - *socket.SOCK_STREAM* 
 - **UDP** - *socket.SOCK_DGRAM*    
 - **IPv4** - *socket.AF_INET*  
