@@ -19,7 +19,7 @@ There are two major task of server:
 * Accept incoming data from active client and forward it to other client
 
 Task of client is to:  
-- Read/send data from/to server
+- Read/ send data from/ to server
 <br />
 
 #### Process Flow Chart
@@ -44,20 +44,27 @@ server.listen()
 rclient, address = server.accept()<br />
 **rclient** is socket object of received connection and will further used to receive/ send data.<br />
 **address** contains IP address & port number of new connection.
+<br />
+<br />
 
 #### Client Main Parts
 - **Initialse** - Creating socket object.<br />
                  client = socket.socket(socket.SOCK_STREAM, socket.AF_INET) 
 - **Connect** - To Connect with the server provide same address & port number at which server is listening.<br />
 client.connect(('127.0.0.1',1234))<br />
+<br />
+<br />
 
-#### To Send/Receive
+#### To Send/Receive Data
 - send() is used to forward data from client/ server to server/client.<br />
 client.send(data)/ server.send(data)<br />
 Sockets transmit streams of bytes, so don't forget to encode your data into byte.
-- recv() is used to receive data from client/ server.
+- recv() is used to receive data from client/ server.<br />
 client.recv(24)/ server.recv(24)<br />
 Here, 24 is size which means at a time it can only read atmost 24 bytes.
+<br />
+<br />
+
 #### Protocols
 - **TCP** - socket.SOCK_STREAM  
 - **UDP** - socket.SOCK_DGRAM    
