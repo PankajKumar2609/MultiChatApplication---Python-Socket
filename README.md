@@ -21,10 +21,15 @@ There are two major task of server:
 Task of client is to:  
 - Read/send data from/to server
 <br />
-<br />
-<br />
 
 #### Process Flow Chart
+<br />
+<br />
+<br />
+<p align="center"><img  src="https://github.com/PankajKumar2609/SocketTutorial/blob/patch1/Gallery/ProcessChart.png?raw=true"></p>
+<br />
+<br />
+<br />
 
 #### Protocols
 - **TCP** - socket.SOCK_STREAM  
