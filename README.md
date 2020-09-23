@@ -55,7 +55,7 @@ client.connect(('127.0.0.1',1234))<br />
 <br />
 <br />
 
-#### To Send/Receive Data
+#### Send/Receive Data
 - send() is used to forward data from client/ server to server/client.<br />
 client.send(data)/ server.send(data)<br />
 Sockets transmit streams of bytes, so don't forget to encode your data into byte.
