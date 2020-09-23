@@ -41,7 +41,7 @@
             *server.bind(('127.0.0.1',1234)) #binding to local host at port 1234 or use your network IPv4 address to which server is connected.*
                 <br />
                 
-- ***Listen** - Start listening to incoming request at bind address and port.*
+- ***Listen** - Start listening to incoming request at bind address and port.*<br />
 *server.listen()*
 <br />
 
@@ -57,7 +57,7 @@
                  *client = socket.socket(socket.SOCK_STREAM, socket.AF_INET)* 
 <br />
 
-- ***Connect** - To Connect with the server provide same address & port number at which server is listening.*
+- ***Connect** - To Connect with the server provide same address & port number at which server is listening.*<br />
 *client.connect(('127.0.0.1',1234))*<br />
 <br />
 <br />
