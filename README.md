@@ -36,12 +36,15 @@
 - ***Initialse** - Creating socket object.*<br />
                  *server = socket.socket(socket.SOCK_STREAM, socket.AF_INET)*
                  <br />
+                 
 - ***Bind** - Bind initialised socket to IP and port.*<br /> 
             *server.bind(('127.0.0.1',1234)) #binding to local host at port 1234 or use your network IPv4 address to which server is connected.*
                 <br />
+                
 - ***Listen** - Start listening to incoming request at bind address and port.*
 *server.listen()*
 <br />
+
 - ***Accept** - Accept new connections if any request comes at above address.*<br />
 *rclient, address = server.accept()*<br />
 ***rclient** is socket object of received connection and will further used to receive/ send data.*<br />
