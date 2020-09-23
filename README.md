@@ -33,7 +33,7 @@
 
 
 #### *Server Main Parts*
-- ***Initialse** - Creating socket object.*<br />
+- ***Initialise** - Creating socket object.*<br />
                  *server = socket.socket(socket.SOCK_STREAM, socket.AF_INET)*
                  <br />
                  
