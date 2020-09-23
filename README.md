@@ -43,7 +43,6 @@
                 
 - ***Listen** - Start listening to incoming request at bind address and port.*<br />
 *server.listen()*
-<br />
 
 - ***Accept** - Accept new connections if any request comes at above address.*<br />
 *rclient, address = server.accept()*<br />
