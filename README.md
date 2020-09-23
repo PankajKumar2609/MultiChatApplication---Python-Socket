@@ -12,7 +12,7 @@
 
 
 
-*Program1 and Program2 are client which communicating with each other and Endpoint is server which actively listening at particular IP address & port.*<br />
+***Program1 and Program2 are client which communicating with each other and Endpoint is server which actively listening at particular IP address & port.***<br />
 <br />
 There are two major task of server:
 * Accept new incoming connection
