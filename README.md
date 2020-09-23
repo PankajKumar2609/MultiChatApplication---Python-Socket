@@ -63,7 +63,8 @@
 #### *Send/Receive Data*
 - ***send()** is used to forward data from client/ server to server/client.*<br />
 *client.send(data)/ server.send(data)*<br />
-*Sockets transmit streams of bytes, so don't forget to encode your data into byte.*
+*Sockets transmit streams of bytes, so don't forget to encode your data into byte.*<br />
+*data.encode('utf-8')*
 
 - ***recv()** is used to receive data from client/ server.*<br />
 *client.recv(24)/ server.recv(24)*<br />
