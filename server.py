@@ -1,18 +1,15 @@
-from requirements.library import *
-
-
-def Socket(host, port):
-    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-    server.bind((host,port))
-    server.listen()
-    return server
-  
+from Requirements.library import *
   
 class Server:
     def __init__(self, host='127.0.0.1', port=1234):
-        self.server = Socket(host, port)
+        self.server = self.Socket(host, port)
         self.client = []
 
+    def Socket(self,host, port):
+	    server = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
+	    server.bind((host,port))
+	    server.listen()
+	    return server
 
     def Accept(self,*args):
         while True:
@@ -36,21 +33,17 @@ class Server:
                   
                   
     def Receive(self, client):
-        message=b''
         try:
           while True:
-              msg = client.recv(20)
-              if len(message)==0:
-                  return message
-                  
-              message+=msg
+              msg = client.recv(1024)
+              if len(msg)==0:
+                  return msg
+                    
         except:
             pass
           
           
     def Send(self, client, message):
-        for client_socket in self.client:
-            if client_socket != client:
-                client_socket.send(message)
+        client.sendall(message)
               
  
