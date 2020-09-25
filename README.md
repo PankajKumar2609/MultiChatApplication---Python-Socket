@@ -79,3 +79,6 @@
 #### *Address Family*
 - **IPv4** - *socket.AF_INET*  
 - **IPv6** - *socket.AF_INET6*  
+
+#### *Select*
+select.select returns three separate list containing writable, readable and disconnected/ inactive socket from a given list.
