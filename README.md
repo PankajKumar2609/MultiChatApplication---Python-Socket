@@ -67,13 +67,15 @@
 *data.encode('utf-8')*
 
 - ***recv()** is used to receive data from client/ server.*<br />
-*client.recv(24)/ server.recv(24)*<br />
-*Here, 24 is size which means at a time it can only read atmost 24 bytes.*
+*client.recv(24)/ server.recv(1024)*<br />
+*Here, 1024 is size which means at a time it can only read atmost 1024 bytes.*
 <br />
 
 
-#### *Protocols*
+#### *Network Protocols*
 - **TCP** - *socket.SOCK_STREAM* 
 - **UDP** - *socket.SOCK_DGRAM*    
+
+#### *Address Family*
 - **IPv4** - *socket.AF_INET*  
 - **IPv6** - *socket.AF_INET6*  
